@@ -6,7 +6,7 @@ namespace TransitiveExample.LibB
     {
         public void Execute()
         {
-            Console.WriteLine("Executing TransitiveExample.LibB.ScenarioA.Execute()");
+            Console.WriteLine($"Executing {typeof(ScenarioA).FullName}.Execute()");
         }
     }
 }
