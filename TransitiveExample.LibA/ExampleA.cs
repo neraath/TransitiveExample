@@ -1,4 +1,5 @@
 ﻿using System;
+using TransitiveExample.LibB;
 
 namespace TransitiveExample.LibA
 {
@@ -7,6 +8,8 @@ namespace TransitiveExample.LibA
         public void Execute()
         {
             Console.WriteLine($"Executing {typeof(ExampleA).FullName}.Execute()");
+            var scenarioA = new ScenarioA();
+            scenarioA.Execute();
         }
     }
 }

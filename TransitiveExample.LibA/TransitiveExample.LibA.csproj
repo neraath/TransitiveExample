@@ -44,5 +44,11 @@
     <Compile Include="ExampleA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransitiveExample.LibB\TransitiveExample.LibB.csproj">
+      <Project>{fa6cd74d-d737-4c24-aed7-630b83702ac1}</Project>
+      <Name>TransitiveExample.LibB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

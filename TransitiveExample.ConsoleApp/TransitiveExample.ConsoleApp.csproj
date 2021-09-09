@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransitiveExample.LibA\TransitiveExample.LibA.csproj">
+      <Project>{bd363fd3-b819-4b75-ac84-ef1ac56d865c}</Project>
+      <Name>TransitiveExample.LibA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

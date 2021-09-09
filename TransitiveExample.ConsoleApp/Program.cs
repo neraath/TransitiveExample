@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TransitiveExample.LibA;
 
 namespace TransitiveExample.ConsoleApp
 {
@@ -10,6 +7,9 @@ namespace TransitiveExample.ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Executing {typeof(Program).FullName}.Main()");
+            var libA = new ExampleA();
+            libA.Execute();
         }
     }
 }
